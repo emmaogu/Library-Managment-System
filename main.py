@@ -17,7 +17,7 @@ MENU = """
 7. Reserve a book
 8. Show overdue loans
 9. Remove a book
-10. Exit
+0. Exit
 """
 
 

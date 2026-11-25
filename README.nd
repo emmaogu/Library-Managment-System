@@ -4,3 +4,26 @@ COM5013 Algorithms and Data Structures project.
 
 A command-line library system that stores books in custom data structures
 and processes them with searching and sorting algorithms.
+
+## Data structures and algorithms
+
+| Feature | Implementation | Big O |
+|---|---|---|
+| Find book by ISBN | Hash table (separate chaining) | O(1) average |
+| List books A to Z | Merge sort | O(n log n) |
+| Find book by title | Binary search | O(log n) |
+| Reservations | Linked-list queue | O(1) enqueue and dequeue |
+| Overdue loans | Binary min-heap | O(log n) push and pop |
+
+## How to run
+
+```bash
+python -m venv .venv
+.venv\Scripts\activate          # Windows
+source .venv/bin/activate       # Mac/Linux
+pip install -r requirements.txt
+
+python main.py                  # run the application
+python -m pytest -v             # run the tests
+python -m benchmarks.benchmark  # run the performance comparison
+```
